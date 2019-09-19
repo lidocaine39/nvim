@@ -13,8 +13,8 @@
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
       \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-        autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-        endif
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
 " ====================
 " === Editor Setup ===
@@ -126,10 +126,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'connorholyday/vim-snazzy'
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'ayu-theme/ayu-vim'
-Plug 'bling/vim-bufferline'
-Plug 'crusoexia/vim-monokai'
+" Plug 'NLKNguyen/papercolor-theme'
+" Plug 'ayu-theme/ayu-vim'
+" Plug 'bling/vim-bufferline'
+" Plug 'crusoexia/vim-monokai'
 
 " File navigation
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
